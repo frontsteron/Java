@@ -34,3 +34,9 @@ public class formedPartWhere {
         return SQLrequest.toString();
     }
 }
+
+//Рекомендую ознакомиться с конвенцией по языку программирования
+// Java - https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
+// Наименование класса в Java -> пиишутся в верхнем регистре. Наименования методов ->
+// пишутся в нижнем регистре первое слово, последующие слова в верхнем
+// регистре (так называемый кемел кейс).
