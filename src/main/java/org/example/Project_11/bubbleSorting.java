@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.io.PrintWriter;
 
 public class bubbleSorting {
+    // Реализуйте алгоритм сортировки пузырьком числового
+    // массива, результат после каждой итерации запишите в лог-файл.
     public static void main(String[] args) {
         int[] array = new int[12];// Задаем случайный массив
         for (int i = 0; i < array.length; i++) {
