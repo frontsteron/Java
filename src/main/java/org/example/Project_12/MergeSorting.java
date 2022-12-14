@@ -2,7 +2,7 @@ package org.example.Project_12;
 
 import java.util.Arrays;
 
-public class mergeSorting {
+public class MergeSorting {
     // Реализовать алгоритм сортировки слиянием
     public static void main(String[] args) {
          int[] array = new int[9]; // initial a random array
