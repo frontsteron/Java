@@ -1,6 +1,6 @@
 package org.example.Project_16.OOP2;
 
-final class Cat {
+public final class Cat {
     private final String name;
     private final int age;
 
