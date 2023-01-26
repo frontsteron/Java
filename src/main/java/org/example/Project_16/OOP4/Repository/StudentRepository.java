@@ -1,4 +1,4 @@
-package Repository;
+package org.example.Project_16.OOP4.Repository;
 
 import Model.Student;
 
@@ -16,6 +16,7 @@ public class StudentRepository {
     public void remove(Student student){}
 
     public void edit(Student student){}
+    public void read(Student student){}
 
     public List getAllStudents(){
         return null;
