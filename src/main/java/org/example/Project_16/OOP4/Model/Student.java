@@ -1,4 +1,4 @@
-package Model;
+package org.example.Project_16.OOP4.Model;
 
 import java.util.List;
 import java.util.Objects;
@@ -7,12 +7,13 @@ public class Student extends User {
     private String name;
     private float grade;
     private int year;
+    private int school;
 
     public Student(String name, float grade, int year) {
         this.name = name;
         this.grade = grade;
         this.year = year;
-
+        this.school = school;
     }
 
     private Teacher teacher;
@@ -41,6 +42,14 @@ public class Student extends User {
     public void setYear(int year) {
         this.year = year;
     }
+    public int getSchool() {
+        return school;
+    }
+
+    public void setSchool(int school) {
+        this.school = school;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -52,7 +61,7 @@ public class Student extends User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, grade, year);
+        return Objects.hash(name, grade, year, school);
     }
 
     @Override
@@ -62,6 +71,7 @@ public class Student extends User {
                 ", grade=" + grade +
                 ", year=" + year +
                 ", teacher=" + teacher +
+                ", school=" + school +
                 '}';
     }
 }
