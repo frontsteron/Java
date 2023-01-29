@@ -1,4 +1,4 @@
-package Controller;
+package org.example.Project_16.OOP4.Controller;
 
 import Model.Student;
 import Service.StudentService;

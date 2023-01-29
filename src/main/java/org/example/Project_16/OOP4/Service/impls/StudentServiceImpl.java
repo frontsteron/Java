@@ -1,4 +1,4 @@
-package Service.impls;
+package org.example.Project_16.OOP4.Service.impls;
 
 import Model.Student;
 import Service.StudentService;

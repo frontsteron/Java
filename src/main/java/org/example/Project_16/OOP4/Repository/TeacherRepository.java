@@ -1,4 +1,4 @@
-package Repository;
+package org.example.Project_16.OOP4.Repository;
 
 import Model.Teacher;
 
