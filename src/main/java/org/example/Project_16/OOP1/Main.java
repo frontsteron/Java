@@ -5,28 +5,28 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Main m = new Main();
-        Human h1 = new Human(1, "Анна Ивановна", "жен");
-        Human h2 = new Human(2, "Инна Ивановна", "жен");
-        Human h3 = new Human(3, "Иван Петрович", "муж");
-        Human h4 = new Human(4, "Ольга Андреевна", "жен");
-        Human h5 = new Human(5, "Петр Сергеевич", "муж");
-        Human h6 = new Human(6, "Ирина Павловна", "жен");
-        Human h7 = new Human(7, "Степан Андреевич", "муж");
-        Human h8 = new Human(8, "Андрей Львович", "муж");
-        Human h9 = new Human(9, "София Иосифовна", "жен");
-        Human h10 = new Human(10, "Неизвестно", "Неизвестно");
-        Set<Human> setHuman = new LinkedHashSet<>(Arrays.asList(h1, h2, h3,
-                h4, h5, h6, h7, h8, h9));
+        Human h0 = new Human(1, "Анна Ивановна", "жен");
+        Human h1 = new Human(2, "Инна Ивановна", "жен");
+        Human h2 = new Human(3, "Иван Петрович", "муж");
+        Human h3 = new Human(4, "Ольга Андреевна", "жен");
+        Human h4 = new Human(5, "Петр Сергеевич", "муж");
+        Human h5 = new Human(6, "Ирина Павловна", "жен");
+        Human h6 = new Human(7, "Степан Андреевич", "муж");
+        Human h7 = new Human(8, "Андрей Львович", "муж");
+        Human h8 = new Human(9, "София Иосифовна", "жен");
+        Human h9 = new Human(10, "Неизвестно", "Неизвестно");
+        Set<Human> setHuman = new LinkedHashSet<>(Arrays.asList(h0, h1, h2,
+                h3, h4, h5, h6, h7, h8));
 
-        Person h1_1 = new Person (h1.getID(), h1.getName(), h1.getSex(), null, new LinkedHashSet<>(Arrays.asList(h2)), null, new LinkedHashSet<>(Arrays.asList(h3, h4)));
-        Person h2_1 = new Person (h2.getID(), h2.getName(), h2.getSex(), null, new LinkedHashSet<>(Arrays.asList(h1)), null, new LinkedHashSet<>(Arrays.asList(h3, h4)));
-        Person h3_1 = new Person (h3.getID(), h3.getName(), h3.getSex(), h4, null, new LinkedHashSet<>(Arrays.asList(h1, h2)), new LinkedHashSet<>(Arrays.asList(h5, h6)));
-        Person h4_1 = new Person (h4.getID(), h4.getName(), h4.getSex(), h3, new LinkedHashSet<>(Arrays.asList(h7)), new LinkedHashSet<>(Arrays.asList(h1, h2)), new LinkedHashSet<>(Arrays.asList(h8, h9)));
-        Person h5_1 = new Person (h5.getID(), h5.getName(), h5.getSex(), h6, null, new LinkedHashSet<>(Arrays.asList(h3)), new LinkedHashSet<>(Arrays.asList(h10)));
-        Person h6_1 = new Person (h6.getID(), h6.getName(), h6.getSex(), h5, null, new LinkedHashSet<>(Arrays.asList(h3)), new LinkedHashSet<>(Arrays.asList(h10)));
-        Person h7_1 = new Person (h7.getID(), h7.getName(), h7.getSex(), null, new LinkedHashSet<>(Arrays.asList(h4)), new LinkedHashSet<>(Arrays.asList(h10)), new LinkedHashSet<>(Arrays.asList(h8, h9)));
-        Person h8_1 = new Person (h8.getID(), h8.getName(), h8.getSex(), h9, null, new LinkedHashSet<>(Arrays.asList(h4, h7)), new LinkedHashSet<>(Arrays.asList(h10)));
-        Person h9_1 = new Person (h9.getID(), h9.getName(), h9.getSex(), h8, null, new LinkedHashSet<>(Arrays.asList(h4, h7)), new LinkedHashSet<>(Arrays.asList(h10)));
+        Person h1_1 = new Person (h0.getID(), h0.getName(), h0.getSex(), null, new LinkedHashSet<>(Arrays.asList(h1)), null, new LinkedHashSet<>(Arrays.asList(h2, h3)));
+        Person h2_1 = new Person (h1.getID(), h1.getName(), h1.getSex(), null, new LinkedHashSet<>(Arrays.asList(h0)), null, new LinkedHashSet<>(Arrays.asList(h2, h3)));
+        Person h3_1 = new Person (h2.getID(), h2.getName(), h2.getSex(), h3, null, new LinkedHashSet<>(Arrays.asList(h0, h1)), new LinkedHashSet<>(Arrays.asList(h4, h5)));
+        Person h4_1 = new Person (h3.getID(), h3.getName(), h3.getSex(), h2, new LinkedHashSet<>(Arrays.asList(h6)), new LinkedHashSet<>(Arrays.asList(h0, h1)), new LinkedHashSet<>(Arrays.asList(h7, h8)));
+        Person h5_1 = new Person (h4.getID(), h4.getName(), h4.getSex(), h5, null, new LinkedHashSet<>(Arrays.asList(h2)), new LinkedHashSet<>(Arrays.asList(h9)));
+        Person h6_1 = new Person (h5.getID(), h5.getName(), h5.getSex(), h4, null, new LinkedHashSet<>(Arrays.asList(h2)), new LinkedHashSet<>(Arrays.asList(h9)));
+        Person h7_1 = new Person (h6.getID(), h6.getName(), h6.getSex(), null, new LinkedHashSet<>(Arrays.asList(h3)), new LinkedHashSet<>(Arrays.asList(h9)), new LinkedHashSet<>(Arrays.asList(h7, h8)));
+        Person h8_1 = new Person (h7.getID(), h7.getName(), h7.getSex(), h8, null, new LinkedHashSet<>(Arrays.asList(h3, h6)), new LinkedHashSet<>(Arrays.asList(h9)));
+        Person h9_1 = new Person (h8.getID(), h8.getName(), h8.getSex(), h7, null, new LinkedHashSet<>(Arrays.asList(h3, h6)), new LinkedHashSet<>(Arrays.asList(h9)));
         Set<Person> setPerson = new LinkedHashSet<>(Arrays.asList(h1_1, h2_1, h3_1, h4_1, h5_1, h6_1, h7_1, h8_1, h9_1));
         m.displayMenu(setHuman, setPerson);
     }
