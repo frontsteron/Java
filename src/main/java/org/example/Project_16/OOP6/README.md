@@ -1,1 +1,2 @@
 * Рефакторинг и\или оптимизация проекта предыдущего дз с учетом теоретических основ SOLID’а
+* Gave people other numbers <code>[here](https://github.com/frontsteron/Java/blob/main/src/main/java/org/example/Project_16/OOP1/Main.java)</code> 
